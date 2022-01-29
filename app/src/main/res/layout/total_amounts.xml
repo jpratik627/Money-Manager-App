@@ -55,7 +55,7 @@
         app:layout_constraintStart_toEndOf="@+id/totIncomeAmt"
         app:layout_constraintTop_toTopOf="@+id/totSpendMonth"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/cash_in_hand" />
+        app:srcCompat="@drawable/expenseimg" />
 
     <TextView
         android:id="@+id/txtIncome"
