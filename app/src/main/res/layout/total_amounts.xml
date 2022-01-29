@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@drawable/curved_shapebg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/circle"
+        android:padding="10dp"
+        android:src="@drawable/cash_in_hand"
+        app:layout_constraintBottom_toBottomOf="@+id/txtIncome"
+        app:layout_constraintEnd_toStartOf="@+id/totIncomeAmt"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/totIncomeAmt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/totIncomeAmt"
+        android:layout_width="97dp"
+        android:layout_height="23dp"
+        android:gravity="start|center_horizontal"
+        android:text="\u20B9 0"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/circle"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBalance"
+        app:layout_constraintEnd_toStartOf="@+id/totSpendMonth"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toEndOf="@+id/totIncomeAmt"
+        app:layout_constraintTop_toTopOf="@+id/totSpendMonth"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/cash_in_hand" />
+
+    <TextView
+        android:id="@+id/txtIncome"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="4dp"
+        android:gravity="start|center_vertical"
+        android:text="Month Budget"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/totIncomeAmt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/totIncomeAmt"
+        app:layout_constraintTop_toBottomOf="@+id/totIncomeAmt" />
+
+    <TextView
+        android:id="@+id/txtBalance"
+        android:layout_width="115dp"
+        android:layout_height="28dp"
+        android:gravity="start|left|center_vertical"
+        android:text="Month Expenses"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtIncome"
+        app:layout_constraintEnd_toEndOf="@+id/totSpendMonth"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/totSpendMonth"
+        app:layout_constraintTop_toBottomOf="@+id/totSpendMonth" />
+
+    <TextView
+        android:id="@+id/totSpendMonth"
+        android:layout_width="115dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="24dp"
+        android:gravity="start|center_horizontal"
+        android:text="\u20B9 0"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtIncome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.752"
+        app:layout_constraintStart_toEndOf="@+id/totIncomeAmt"
+        app:layout_constraintTop_toTopOf="@+id/totIncomeAmt"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

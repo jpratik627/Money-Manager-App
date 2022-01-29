@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistrationActivity"
+    android:padding="30dp"
+    android:background="#FFECF7FA"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="301dp"
+        android:layout_height="244dp"
+        android:layout_marginTop="48dp"
+        android:padding="10dp"
+
+        app:srcCompat="@drawable/applogo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tlREmail"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:singleLine="true"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tlRPassword"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/black"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/bRSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/muli_black"
+        android:text="SignUp"
+        android:background="#78DAF4"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+    <TextView
+        android:id="@+id/bRLogin"
+        android:layout_width="341dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Already Have Account?Login"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+</LinearLayout>

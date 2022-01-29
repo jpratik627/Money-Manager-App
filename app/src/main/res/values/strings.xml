@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Money Manager App</string>
+    <string name="Rs">\u20B9</string>
+    <string name="_0">\u20B9\0</string>
+    <string name="budget_amount">Budget Amount:\u20B9\0</string>
+    <string name="total_amount">Total Amount:\u20B9\0</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="my_budget">My Budget</string>
+    <string name="todays_expense">Today\'s Expense</string>
+    <string name="weekly_expense">Weekly Expense</string>
+    <string name="monthly_expense">Monthly Expense</string>
+    <string name="analytics">Analytics</string>
+    <string name="history">History</string>
+    <string-array name="items">
+        <item>Select Category</item>
+        <item>Transport</item>
+        <item>Food</item>
+        <item>House Expenses</item>
+        <item>Entertainment</item>
+        <item>Education</item>
+        <item>Charity</item>
+        <item>Apparel and Services</item>
+        <item>Health</item>
+        <item>Personal Expenses</item>
+        <item>Other</item>
+    </string-array>
+
+
+</resources>

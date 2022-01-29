@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="#FFECF7FA">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Update this entry"
+        android:textColor="@color/black"
+        android:layout_margin="15dp"
+        android:textSize="20sp"
+        android:background="@drawable/curved_shapebg"/>
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="@font/muli_black"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="Enter Amount"
+        android:inputType="number"
+        android:id="@+id/amount"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Comment"
+        android:inputType="textCapSentences"
+        android:id="@+id/note"
+        android:layout_margin="5dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0">
+
+<!--                <Button-->
+<!--                    android:id="@+id/deleteBtn"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Delete"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textStyle="bold" />-->
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/updateBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#78DAF4"
+                    android:text="Update"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BudgetActivity"
+    android:background="#FFECF7FA">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/aToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        app:navigationIcon="@drawable/ic_baseline_back_24"
+        app:title="Month Budget"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:id="@+id/tvBudgetAmount"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/curved_shapebg"
+        android:layout_margin="15dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/budget_amount"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            app:fabSize="normal"
+            android:id="@+id/bFab"
+            app:layout_anchorGravity="center"
+            android:backgroundTint="#000"
+            android:src="@drawable/ic_add"
+            android:layout_margin="16dp"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="#57DBFF"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="310dp"
+        android:layout_height="61dp"
+
+        android:layout_below="@+id/imageView"
+        android:layout_gravity="bottom|start"
+        android:gravity="start|top"
+        android:padding="10dp"
+        android:text="Money Manager"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="116dp"
+        android:layout_height="87dp"
+        android:layout_gravity="top"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        app:srcCompat="@drawable/applogo" />
+
+
+</RelativeLayout>
